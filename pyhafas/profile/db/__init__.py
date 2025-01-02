@@ -1,9 +1,10 @@
 import pytz
 
 from pyhafas.profile.base import BaseProfile
+from pyhafas.profile.db.requests.journeys import DBJourneysRequest
 
 
-class DBProfile(BaseProfile):
+class DBProfile(DBJourneysRequest, BaseProfile):
     """
     Profile of the HaFAS of Deutsche Bahn (DB) - German Railway - Regional and long-distance trains throughout Germany
     """
